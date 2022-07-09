@@ -1,11 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import ReactDOM from "react-dom/client";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from "../src/pages/Home";
+import Thankyou from "../src/pages/Thankyou";
 import './index.css'
-const root = ReactDOM.createRoot (document.querySelector("#root"));
+import Layout from "./pages/Layout";
+
+const root = ReactDOM.createRoot(
+  document.getElementById("root")
+);
 root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
-  
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="thankyou" element={<Thankyou />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+);
+
