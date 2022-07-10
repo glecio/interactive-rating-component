@@ -17,7 +17,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="thankyou" element={<Thankyou />} />
+        <Route path="/thankyou/:rating" element={<Thankyou />} />
       </Route>
     </Routes>
   </BrowserRouter>
