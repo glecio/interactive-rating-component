@@ -1,5 +1,10 @@
-.card span {
-  color: red;
+.card a {
   padding: 1rem;
   background: #ccc;
+  cursor: pointer;
+}
+
+.numbers .active {
+  color: #000d;
+  background: rgb(199, 57, 57);
 }
