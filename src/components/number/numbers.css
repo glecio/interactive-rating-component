@@ -1,10 +1,12 @@
-.card a {
-  padding: 1rem;
-  background: #ccc;
-  cursor: pointer;
+.numbers li {
+  color: var(--color-white);
 }
 
-.numbers .active {
-  color: #000d;
-  background: rgb(199, 57, 57);
+.numbers li:hover {
+  background: var(--color-medium-grey);
+  color: var(--color-white);
+}
+.numbers li.active {
+  background: var(--color-orange);
+  color: var(--color-white);
 }
