@@ -48,8 +48,11 @@ The designs were created to the following widths:
 
 :root {
   --color-white: hsl(0, 0%, 100%);
+  --color-orange: hsl(25, 97%, 53%);
+
   --color-light-grey: hsl(217, 12%, 63%);
   --color-medium-grey: hsl(216, 12%, 54%);
+  --color-dark-grey: hsl(210, 15%, 23%);
   --color-dark-blue: hsl(213, 19%, 18%);
   --color-very-dark-blue: hsl(216, 12%, 8%);
 
@@ -60,16 +63,9 @@ The designs were created to the following widths:
   --transition: all 400ms ease;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   font-family: "Overpass", sans-serif;
+  font-size: 15px;
   background-color: var(--color-very-dark-blue);
   color: var(--color-white);
   line-height: 1.7;
@@ -79,27 +75,66 @@ body {
 
 .container {
   width: var(--container-width-lg);
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.btn {
+p {
+  font-weight: 400;
+}
+
+.card {
+  background-color: var(--color-dark-blue);
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 375px;
+}
+
+.card ul.numbers {
+  display: grid;
+  grid: 100% / 1fr 1fr 1fr 1fr 1fr;
+  gap: 0rem;
+  text-align: center;
+  padding: 0;
+  margin: auto;
+  border-spacing: 1rem;
+}
+
+.card ul li {
+  background: var(--color-dark-grey);
+  color: var(--color-light-grey);
+  cursor: pointer;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  list-style-type: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.btn-send {
   width: max-content;
   display: inline-block;
+  background: var(--color-orange);
   color: var(--color-primary);
   padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
+  border-radius: 3rem;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
   transition: var(--transition);
+  width: 100%;
+  text-align: center;
 }
 
-.btn:hover {
+.btn-send:hover {
   background: var(--color-white);
-  color: var(--color-bg);
+  color: var(--color-orange);
   border-color: transparent;
 }
 
