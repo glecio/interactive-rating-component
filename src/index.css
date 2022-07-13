@@ -90,9 +90,14 @@ p {
 .card {
   background-color: var(--color-dark-blue);
   margin: 0 auto;
-  border-radius: 10px;
-  padding: 2rem;
+  border-radius: 20px;
+  padding: 1.5rem;
   max-width: 375px;
+}
+
+.card p {
+  margin-bottom: 2rem;
+  color: var(--color-light-grey);
 }
 
 .card ul.numbers {
@@ -120,22 +125,35 @@ p {
 }
 
 .btn-send {
-  width: max-content;
+  width: 100%;
   display: inline-block;
   background: var(--color-orange);
   color: var(--color-primary);
-  padding: 0.75rem 1.2rem;
+  padding: 0.4rem 1.2rem;
   border-radius: 3rem;
   cursor: pointer;
   transition: var(--transition);
-  width: 100%;
   text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
 }
 
 .btn-send:hover {
   background: var(--color-white);
   color: var(--color-orange);
   border-color: transparent;
+}
+
+.card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: var(--color-dark-grey);
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 /* ===================== MEDIA QUERIES (MEDIUM DEVICES) ===================== */
