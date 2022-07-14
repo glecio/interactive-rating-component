@@ -15,12 +15,12 @@ function Home() {
     return (
         <>
             <div className="container">
-                <div className="card">
-                    <div className="card-img">
+                <article className="home__card">
+                    <div className="home__card-img">
                         <Star className='star-img' />
                     </div>
                     
-                    <h1>How did we do?</h1>
+                    <h2>How did we do?</h2>
                     <p>Please let us know how we did with your support request. All feedback is appreciated 
                     to help us improve our offering!</p>
                     <Numbers sendChildToParent={sendChildToParent}  /> 
@@ -28,7 +28,7 @@ function Home() {
                     <Link to={`/thankyou/${rating}`} className='btn-send'>
                         SUBMIT
                     </Link>
-                </div>
+                </article>
             </div>
         </>
     );
